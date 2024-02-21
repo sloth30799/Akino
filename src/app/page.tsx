@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero"
-import Loader from "@/components/Loader"
 import Navbar from "@/components/Navbar"
 
 const Page = () => {
