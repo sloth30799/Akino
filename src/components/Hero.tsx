@@ -4,7 +4,7 @@ import { useEffect } from "react"
 import anime from "animejs"
 
 import Image from "next/image"
-import hero from "@/assets/images/hero.png"
+// import hero from "@/assets/images/hero.png"
 
 const Hero = () => {
     useEffect(() => {
@@ -46,12 +46,12 @@ const Hero = () => {
                     </span>
                 </div>
                 <div className="relative h-[60vh] col-span-2">
-                    <Image
+                    {/* <Image
                         src={hero}
                         alt="hero-image"
                         layout="fill"
                         objectFit="contain"
-                    />
+                    /> */}
                 </div>
                 <div className="flex flex-col h-full col-span-1 pb-6">
                     <div className="flex items-end gap-12 mt-auto text-xs">
