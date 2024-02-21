@@ -15,7 +15,7 @@ type LoaderProps = {
 }
 
 const PreLoader = ({ children }: LoaderProps) => {
-    const [loader, setLoader] = useState(true)
+    const [loader, setLoader] = useState(false)
 
     const images = [
         { image: loader1, x: -320, y: 140 },

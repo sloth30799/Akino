@@ -1,4 +1,6 @@
+import About from "@/components/About"
 import Hero from "@/components/Hero"
+import Menus from "@/components/Menus"
 import Navbar from "@/components/Navbar"
 
 const Page = () => {
@@ -7,6 +9,10 @@ const Page = () => {
             <Navbar />
 
             <Hero />
+
+            <About />
+
+            <Menus />
         </section>
     )
 }
