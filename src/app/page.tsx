@@ -2,6 +2,8 @@ import About from "@/components/About"
 import Hero from "@/components/Hero"
 import Menus from "@/components/Menus"
 import Navbar from "@/components/Navbar"
+import Footer from "../components/Footer"
+import Milestones from "@/components/Milestones"
 
 const Page = () => {
     return (
@@ -13,6 +15,10 @@ const Page = () => {
             <About />
 
             <Menus />
+
+            <Milestones />
+
+            <Footer />
         </section>
     )
 }

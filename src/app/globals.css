@@ -3,77 +3,109 @@
 @tailwind utilities;
 
 :root {
-    --font-lineheight-00: 0.95;
-    --font-lineheight-0: 1.1;
-    --font-lineheight-1: 1.25;
-    --font-lineheight-2: 1.375;
-    --font-lineheight-3: 1.5;
-    --font-lineheight-4: 1.75;
-    --font-lineheight-5: 2;
-    --font-letterspacing-0: -0.05em;
-    --font-letterspacing-1: 0.025em;
-    --font-letterspacing-2: 0.05em;
-    --font-letterspacing-3: 0.075em;
-    --font-letterspacing-4: 0.15em;
-    --font-letterspacing-5: 0.5em;
-    --font-letterspacing-6: 0.75em;
-    --font-letterspacing-7: 1em;
-    --font-size-fluid-0: clamp(0.75rem, 2vw, 1rem);
-    --font-size-fluid-1: clamp(0.9rem, 3vw, 1.25rem);
-    --font-size-fluid-2: clamp(1.5rem, 6vw, 2.5rem);
-    --font-size-fluid-3: clamp(2rem, 9vw, 3.5rem);
-    --font-size-fluid-4: clamp(4rem, 10vw, 6rem);
+	--font-lineheight-00: 0.95;
+	--font-lineheight-0: 1.1;
+	--font-lineheight-1: 1.25;
+	--font-lineheight-2: 1.375;
+	--font-lineheight-3: 1.5;
+	--font-lineheight-4: 1.75;
+	--font-lineheight-5: 2;
+	--font-letterspacing-0: -0.05em;
+	--font-letterspacing-1: 0.025em;
+	--font-letterspacing-2: 0.05em;
+	--font-letterspacing-3: 0.075em;
+	--font-letterspacing-4: 0.15em;
+	--font-letterspacing-5: 0.5em;
+	--font-letterspacing-6: 0.75em;
+	--font-letterspacing-7: 1em;
+	--font-size-fluid-0: clamp(0.75rem, 2vw, 1rem);
+	--font-size-fluid-1: clamp(0.9rem, 3vw, 1.25rem);
+	--font-size-fluid-2: clamp(1.5rem, 6vw, 2.5rem);
+	--font-size-fluid-3: clamp(2rem, 9vw, 3.5rem);
+	--font-size-fluid-4: clamp(4rem, 10vw, 6rem);
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-    }
+	:root {
+	}
 }
 
 @layer utilities {
-    .text-balance {
-        text-wrap: balance;
-    }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
 
 body {
-    background-color: #f5f5f4;
+	background-color: #f5f5f4;
 }
 
 .loader-container {
-    display: grid;
-    grid: [one] 1fr / [two] 1fr;
+	display: grid;
+	grid: [one] 1fr / [two] 1fr;
 }
 
 .loader-img {
-    grid-area: one / two;
-    justify-self: center;
-    align-self: center;
-    width: 400px;
+	grid-area: one / two;
+	justify-self: center;
+	align-self: center;
+	width: 400px;
 }
 
 .loader-img:nth-child(1) {
-    z-index: 0;
+	z-index: 0;
 }
 
 .loader-img:nth-child(2) {
-    z-index: 1;
+	z-index: 1;
 }
 
 .loader-img:nth-child(3) {
-    width: 180px;
-    z-index: 3;
-    aspect-ratio: 2.5/3;
+	width: 180px;
+	z-index: 3;
+	aspect-ratio: 2.5/3;
 }
 
 .loader-img:nth-child(4) {
-    width: 250px;
-    z-index: 4;
-    aspect-ratio: 2.5/3;
+	width: 250px;
+	z-index: 4;
+	aspect-ratio: 2.5/3;
 }
 
 .loader-img:nth-child(5) {
-    width: 200px;
-    z-index: 5;
-    aspect-ratio: 2.5/3;
+	width: 200px;
+	z-index: 5;
+	aspect-ratio: 2.5/3;
+}
+
+/* milestone */
+.milestones-list::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.milestones-list {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.not-focused-li-2 {
+	opacity: 0.0599025;
+	translate: none;
+	rotate: none;
+	scale: none;
+	transform: perspective(200px) translate3d(0px, 0px, -40.0162px)
+		rotateX(24.0097deg);
+}
+
+.not-focused-li {
+    opacity: 0.3;
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform: perspective(200px) translate3d(0px, 0px, -15.0162px) rotateX(9.00975deg);
+}
+
+.milestone-height {
+	height: calc(100vh + 500px);
 }
