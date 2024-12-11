@@ -16,6 +16,8 @@ export default {
           "Segoe UI Symbol",
           "Noto Color Emoji",
         ],
+        jolly: ["Jolly Lodger", "system-ui"],
+        fascinate: ["Fascinate", "system-ui"],
       },
       borderRadius: {
         lg: "var(--radius)",
