@@ -1,3 +1,4 @@
+import { BookOpenText, GalleryVerticalEndIcon } from "lucide-react";
 import { useState } from "react";
 import { Separator } from "~/components/ui/separator";
 import { cn } from "~/lib/utils";
@@ -31,18 +32,10 @@ const About = () => {
 
   return (
     <main className="flex flex-col h-screen">
-      <header className="header-bar">
-        <a
-          href="https://www.google.com/maps"
-          className="flex items-center justify-center gap-1 cursor-pointer hover:underline active:underline hover:text-primary"
-        >
-          Reservations
-        </a>
-      </header>
-
       <div className="p-8 w-[80%] space-y-8">
         <section className="grid grid-cols-5 gap-8 gap-y-8">
-          <h5 className="mt-2 text-sm text-primary/75 font-fascinate">
+          <h5 className="flex gap-3 mt-2 text-sm text-primary/75 font-fascinate">
+            <BookOpenText size={20} />
             ABOUT US
           </h5>
 
@@ -64,7 +57,8 @@ const About = () => {
         <Separator />
 
         <section className="grid grid-cols-5 gap-8 gap-y-12">
-          <h5 className="mt-6 text-sm text-primary/75 font-fascinate">
+          <h5 className="flex gap-3 mt-6 text-sm text-primary/75 font-fascinate">
+            <GalleryVerticalEndIcon size={20} />
             OUR HISTORY
           </h5>
 

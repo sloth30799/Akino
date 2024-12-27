@@ -1,7 +1,8 @@
 import type { MetaFunction } from "@remix-run/node";
+import { BookMarkedIcon } from "lucide-react";
 import home from "~/assets/home.jfif";
+import Header from "~/components/layout/Header";
 import { Button } from "~/components/ui/button";
-import { MapPin } from "lucide-react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -20,15 +21,7 @@ const BANNER_TEXT = [
 export default function Index() {
   return (
     <main className="flex flex-col h-screen">
-      <header className="header-bar">
-        <a
-          href="https://www.google.com/maps"
-          className="flex items-center justify-center gap-1 cursor-pointer hover:underline active:underline hover:text-primary"
-        >
-          <MapPin className="size-5" /> Location
-        </a>
-      </header>
-
+      <Header />
       <div className="grid h-full grid-cols-3 gap-4 p-6 pt-0">
         <section className="flex flex-col h-full col-span-2 gap-6 pl-4">
           <div className="mt-auto">
@@ -47,7 +40,10 @@ export default function Index() {
             chosen, and every detail reflects our passion for excellence.
           </p>
 
-          <Button className="w-fit">Book Now</Button>
+          <Button className="w-fit">
+            <BookMarkedIcon />
+            Book Now
+          </Button>
 
           <div className="flex items-center justify-between gap-24 mt-auto text-xs text-secondary">
             <span className="mt-auto text-xs text-nowrap font-fascinate">

@@ -10,7 +10,9 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
     <div className="flex min-w-screen">
       <Sidebar />
 
-      <div className="w-full h-full">{children}</div>
+      <div className="w-full h-full">
+        {children}
+      </div>
     </div>
   );
 };
