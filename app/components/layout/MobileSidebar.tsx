@@ -10,7 +10,7 @@ const MobileSidebar = () => {
 
   return (
     <aside
-      className={`fixed z-10 p-2 -translate-y-1/2 bg-white shadow-xl left-2 top-1/2 rounded-xl h-fit ease-in duration-500 ${
+      className={`fixed md:hidden z-10 p-2 -translate-y-1/2 bg-white shadow-xl left-2 top-1/2 rounded-xl h-fit ease-in duration-500 ${
         isOpen ? "-translate-y-1/2 opacity-100" : "translate-y-0 top-2"
       }`}
     >
