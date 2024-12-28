@@ -1,48 +1,17 @@
 import { NavLink, Link } from "@remix-run/react";
-
-const NAVIGATION_MENUS = [
-  {
-    name: "Home",
-    path: "/",
-  },
-  {
-    name: "About",
-    path: "/about",
-  },
-  {
-    name: "Menu",
-    path: "/menu",
-  },
-  {
-    name: "Book",
-    path: "/book",
-  },
-];
-
-const SOCIAL_LINKS = [
-  {
-    name: "FB",
-    link: "",
-  },
-  {
-    name: "IG",
-    link: "",
-  },
-];
+import { NAVIGATION_MENUS, SOCIAL_LINKS } from "~/data/sidebar";
 
 const Sidebar = () => {
   return (
-    <aside className="flex flex-col gap-3 items-center justify-between min-h-screen min-w-[10%] pb-4 border-r border-foreground">
-      <section className="header-bar">
-        <Link
-          to="/"
-          className="font-semibold cursor-pointer select-none font-fascinate first-letter:text-primary"
-        >
-          Akino
-        </Link>
-      </section>
+    <aside className="hidden md:flex flex-col gap-3 items-center justify-between min-h-screen min-w-[10%] pb-4 border-r border-foreground">
+      <Link
+        to="/"
+        className="font-semibold cursor-pointer select-none header-bar font-fascinate first-letter:text-primary"
+      >
+        Akino
+      </Link>
 
-      <section className="px-4 space-y-4 text-center uppercase">
+      <section className="px-4 space-y-4 text-sm text-center uppercase lg:text-base">
         {NAVIGATION_MENUS.map((nm) => (
           <NavLink
             to={nm.path}

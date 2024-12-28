@@ -56,7 +56,7 @@ const MENUS = [
 
 const menu = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-10 text-center max-w-[600px] min-h-screen mx-auto">
+    <div className="flex flex-col p-4 items-center justify-center gap-10 text-center max-w-[600px] min-h-screen mx-auto">
       <h2 className="flex items-center gap-3 text-2xl font-fascinate">
         <Utensils size={20}  />
         MENU

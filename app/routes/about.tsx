@@ -31,24 +31,24 @@ const About = () => {
   const [activeYear, setActiveYear] = useState(HISTORY[0].year);
 
   return (
-    <main className="flex flex-col h-screen">
-      <div className="p-8 w-[80%] space-y-8">
-        <section className="grid grid-cols-5 gap-8 gap-y-8">
-          <h5 className="flex gap-3 mt-2 text-sm text-primary/75 font-fascinate">
+    <main className="flex flex-col min-h-screen">
+      <div className="p-4 md:p-8 md:w-full lg:w-[80%] space-y-4 md:space-y-8">
+        <section className="grid grid-cols-6 gap-4">
+          <h5 className="flex col-span-6 gap-3 mt-1 text-sm md:col-span-2 lg:mt-2 text-primary/75 font-fascinate">
             <BookOpenText size={20} />
             ABOUT US
           </h5>
 
-          <h6 className="col-span-4 text-xl text-primary">
+          <h6 className="col-span-6 text-lg md:col-span-4 lg:text-xl text-primary">
             Join us at Akino Ramen Yangon, we bring authentic Japanese flavors
             to the heart of the city. From rich broths to hand-made noodles,
             every bowl is crafted with care to deliver comfort, taste, and
             tradition.
           </h6>
 
-          <div></div>
+          <div className="col-span-6 md:col-span-2"></div>
           {VALUES.map((va) => (
-            <p className="col-span-2" key={va}>
+            <p className="col-span-3 md:col-span-2" key={va}>
               {va}
             </p>
           ))}
@@ -56,19 +56,19 @@ const About = () => {
 
         <Separator />
 
-        <section className="grid grid-cols-5 gap-8 gap-y-12">
-          <h5 className="flex gap-3 mt-6 text-sm text-primary/75 font-fascinate">
+        <section className="grid grid-cols-6 gap-4">
+          <h5 className="flex col-span-6 gap-3 mt-4 text-sm md:col-span-2 lg:mt-6 text-primary/75 font-fascinate">
             <GalleryVerticalEndIcon size={20} />
             OUR HISTORY
           </h5>
 
-          <div className="col-span-2 space-y-4">
+          <div className="flex items-center col-span-6 gap-2 md:block md:col-span-2 md:space-y-4">
             {HISTORY.map((hy) => (
               <a
                 key={hy.year}
                 href={`#${hy.year}`}
                 className={cn(
-                  "text-6xl font-fascinate select-none block cursor-pointer hover:text-primary/80 active:text-primary/80",
+                  "text-xl md:text-5xl lg:text-6xl font-fascinate select-none block cursor-pointer hover:text-primary/80 active:text-primary/80",
                   activeYear === hy.year ? "text-primary" : "text-primary/50"
                 )}
                 onClick={() => setActiveYear(hy.year)}
@@ -79,9 +79,9 @@ const About = () => {
             ))}
           </div>
 
-          <div className="col-span-2 overflow-y-auto hide-scrollbar scroll-smooth">
+          <div className="flex col-span-6 overflow-auto md:block md:col-span-2 hide-scrollbar scroll-smooth">
             {HISTORY.map((ht) => (
-              <div key={ht.text} id={ht.year.toString()} className="h-full">
+              <div key={ht.text} id={ht.year.toString()} className="min-w-full md:h-full">
                 {ht.text}
               </div>
             ))}
