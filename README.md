@@ -1,40 +1,17 @@
-# Welcome to Remix!
+# Akino Ramen [Link](https://akino-ramen.vercel.app/)
 
-- 📖 [Remix docs](https://remix.run/docs)
+Indulge in authentic ramen flavors with Akino Ramen—a modern web app designed to showcase our handcrafted menu. Currently featuring an elegant landing page.
 
-## Development
+![Imgur](https://imgur.com/66VnwBa)
 
-Run the dev server:
+## Tech Used
+![Remix.js](https://img.shields.io/badge/-Remix-%23202020?style=for-the-badge&logo=remix&logoColor=white)
+![TypeScript](https://img.shields.io/badge/-TypeScript-%23007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-```shellscript
-npm run dev
-```
+## Optimization
 
-## Deployment
+Future updates will introduce full-stack functionality for seamless table bookings and online ordering.
 
-First, build your app for production:
+## Lesson Learned
 
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+Learnt how to build with remix.
